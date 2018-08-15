@@ -14,21 +14,22 @@
 <p><b> Step - 3 :- </b> Go to your directory where your downloaded or cloned project is located . Open your terminal . Gitbash termninal is preferred . Now run this command :- </p>
 
 ```
-php artisan serve
-```
-Now copy that localhost link and paste it in your browser .
-
-<p><b> Step - 4 :- </b> Run this command in your terminal :-  </p>
-
-```
 php artisan migrate:refresh 
+```
+
+<p><b> Step - 4 :- </b> Now run this command in your terminal :-  </p>
+
+```
+php artisan db:seed
 ```
 
 <p><b> Step - 5 :- </b> Then run this command in your terminal :- </p>
 
 ```
-php artisan db:seed
+php artisan serve
 ```
+
+Now copy that localhost link and paste it in your browser .
 
 <p><b> Step - 6 :- </b> Now to access the administrator account log in with password "admin" and email "admin@rash.com" </p>
 <br>
