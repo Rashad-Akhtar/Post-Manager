@@ -17,8 +17,12 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         Schema::defaultStringLength(191);
+        
+        if(Schema::hasTable('channels'))
+        {
+            View::share('channels',Channel::all());
+        }
 
-        View::share('channels',Channel::all());
     }
 
     /**
