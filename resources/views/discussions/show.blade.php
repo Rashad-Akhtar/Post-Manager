@@ -8,7 +8,7 @@
 
                         <img src="{{ asset('avatars/graduate.png') }}" class="ml-2" alt="avatar" width="50" height="50">
                         <span class="text-primary font-weight-bold ml-2">{{ $discuss->user->name }} , {{ $discuss->created_at->diffForHumans() }} </span>
-                        @if(Auth::check())
+                        {{-- @if(Auth::check())
 
                         @if($discuss->is_watched_by_auth_user())
 
@@ -20,7 +20,7 @@
 
                         @endif 
 
-                        @endif
+                        @endif --}}
                         <hr>
 
                     </div>
