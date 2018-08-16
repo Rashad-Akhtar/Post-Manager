@@ -9,29 +9,55 @@
 
 <p><b> Step - 1 :- </b> Download or clone this project from this repository . </p>
 
-<p><b> Step - 2 :- </b> Create a database named forum in your phpmyadmin .</p>
-
-<p><b> Step - 3 :- </b> Go to your directory where your downloaded or cloned project is located . Open your terminal there . Gitbash termninal is preferred . Now run this command :- </p>
+<p><b> Step - 2 :- </b> Go to your directory where your downloaded or cloned project is located . Open your terminal there . Gitbash termninal is preferred . Now run this command :- </p>
 
 ```
-php artisan migrate 
+composer install 
 ```
 
-<p><b> Step - 4 :- </b> Now run this command in your terminal :-  </p>
+<p><b> Step - 3 :- </b> Then run this command in your terminal :-  </p>
 
 ```
-php artisan db:seed
+cp .env.example .env ( if using gitbash )
+copy .env.example .env ( if using windows command prompt )
 ```
 
-<p><b> Step - 5 :- </b> Then run this command in your terminal :- </p>
+<p><b> Step - 4 :- </b> Now create a database named forum in your phpmyadmin . </p>
+
+<p><b> Step - 5 :- </b> Now open .env file and configure it like this  </p>
+
+```
+DB_DATABASE=forum
+DB_USERNAME=root
+DB_PASSWORD= 
+```
+
+<p><b> Step - 6 :- </b> Then run this command in your terminal :-  </p>
+
+```
+php artisan key:generate
+```
+
+<p><b> Step - 7 :- </b> Then run this command in your terminal :-  </p>
+
+```
+php artisan migrate
+```
+
+<p><b> Step - 8 :- </b> Then run this command in your terminal :-  </p>
+
+```
+php artisan db:seed 
+```
+
+<p><b> Step - 9 :- </b> Now run this command in your terminal :-  </p>
 
 ```
 php artisan serve
 ```
-
 Now copy that localhost link and paste it in your browser .
 
-<p><b> Step - 6 :- </b> Now to access the administrator account log in with password "admin" and email "admin@rash.com" </p>
+<p><b> Step - 10 :- </b> Now to access the administrator account log in with password "admin" and email "admin@rash.com" </p>
 <br>
 
 
