@@ -153,7 +153,9 @@
                     @endforeach 
 
                     <hr>
-
+                    @if($discuss->hasBestAnswer())
+                    <h2 class="text-center text-danger">Reply section is turned off</h2>
+                    @else
                     <div class="card">
 
                         <div class="card-heading">
@@ -179,6 +181,7 @@
                         </div>
 
                     </div>
+                    @endif
 
 @endsection
 
