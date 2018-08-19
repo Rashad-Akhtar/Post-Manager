@@ -118,6 +118,9 @@
                                             <li class="list-group-item">
                                                 <a href="/channels" style="text-decorations:none">All Channels</a>
                                             </li>
+                                            <li class="list-group-item">
+                                                <a href="/channels/create" style="text-decorations:none">Create Channel</a>
+                                            </li>
                                         </ul>
 
                                      </div>
