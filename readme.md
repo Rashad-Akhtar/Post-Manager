@@ -1,4 +1,4 @@
-<h1 align="center">Forum Discussion Application</h1>
+<h1 align="center">Post Manager Application</h1>
 
 ## Description
 
